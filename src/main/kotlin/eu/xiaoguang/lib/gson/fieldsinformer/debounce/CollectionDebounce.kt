@@ -1,4 +1,4 @@
-package eu.xiaoguang.lib.gsonfieldsinformer.debounce
+package eu.xiaoguang.lib.gson.fieldsinformer.debounce
 
 import java.util.concurrent.ScheduledThreadPoolExecutor
 import java.util.concurrent.TimeUnit

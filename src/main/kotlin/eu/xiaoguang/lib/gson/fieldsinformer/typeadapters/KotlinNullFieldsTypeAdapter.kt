@@ -1,16 +1,16 @@
-package eu.xiaoguang.lib.gsonfieldsinformer.typeadapters
+package eu.xiaoguang.lib.gson.fieldsinformer.typeadapters
 
 import com.google.gson.TypeAdapter
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
 import com.google.gson.stream.JsonWriter
-import eu.xiaoguang.lib.gsonfieldsinformer.InformerCallback
-import eu.xiaoguang.lib.gsonfieldsinformer.debounce.CollectionDebounce
+import eu.xiaoguang.lib.gson.fieldsinformer.InformerCallback
+import eu.xiaoguang.lib.gson.fieldsinformer.debounce.CollectionDebounce
 import kotlin.reflect.KProperty
 import kotlin.reflect.KVisibility
 import kotlin.reflect.full.declaredMembers
 
-class KotlinNullFieldsTypeAdapter<T : Any?>(
+internal class KotlinNullFieldsTypeAdapter<T : Any?>(
     type: TypeToken<T>,
     private val delegate: TypeAdapter<T>,
     debounceMilliseconds: Long,

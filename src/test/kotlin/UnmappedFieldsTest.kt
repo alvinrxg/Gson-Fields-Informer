@@ -1,7 +1,7 @@
 package abc.pkgname
 
 import com.google.gson.GsonBuilder
-import eu.xiaoguang.lib.gsonfieldsinformer.InformerTypeAdapterFactories
+import eu.xiaoguang.lib.gson.fieldsinformer.InformerTypeAdapterFactories
 import org.junit.jupiter.api.Test
 
 

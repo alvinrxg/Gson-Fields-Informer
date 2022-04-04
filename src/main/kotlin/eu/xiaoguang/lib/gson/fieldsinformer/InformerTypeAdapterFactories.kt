@@ -1,8 +1,8 @@
-package eu.xiaoguang.lib.gsonfieldsinformer
+package eu.xiaoguang.lib.gson.fieldsinformer
 
 import com.google.gson.TypeAdapterFactory
-import eu.xiaoguang.lib.gsonfieldsinformer.typeadapters.KotlinNullFieldsTypeAdapterFactory
-import eu.xiaoguang.lib.gsonfieldsinformer.typeadapters.UnmappedFieldsTypeAdapterFactory
+import eu.xiaoguang.lib.gson.fieldsinformer.typeadapters.KotlinNullFieldsTypeAdapterFactory
+import eu.xiaoguang.lib.gson.fieldsinformer.typeadapters.UnmappedFieldsTypeAdapterFactory
 
 
 object InformerTypeAdapterFactories {

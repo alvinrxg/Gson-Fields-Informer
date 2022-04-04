@@ -1,10 +1,10 @@
-package eu.xiaoguang.lib.gsonfieldsinformer.typeadapters
+package eu.xiaoguang.lib.gson.fieldsinformer.typeadapters
 
 import com.google.gson.Gson
 import com.google.gson.TypeAdapter
 import com.google.gson.TypeAdapterFactory
 import com.google.gson.reflect.TypeToken
-import eu.xiaoguang.lib.gsonfieldsinformer.InformerCallback
+import eu.xiaoguang.lib.gson.fieldsinformer.InformerCallback
 
 internal class UnmappedFieldsTypeAdapterFactory(
     private val windowMilliseconds: Long,
