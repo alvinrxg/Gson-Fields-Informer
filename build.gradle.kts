@@ -21,3 +21,21 @@ dependencies {
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/alvinrxg/Gson-Fields-Informer")
+            credentials {
+                username = extra["githubusername"] as String
+                password = extra["githubpassword"] as String
+            }
+        }
+    }
+    publications {
+        register<MavenPublication>("gpr") {
+            from(components["java"])
+        }
+    }
+}
